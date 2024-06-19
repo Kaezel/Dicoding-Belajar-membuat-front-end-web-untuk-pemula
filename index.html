@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookshelf Apps by Jafier Andreas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <h1>Bookshelf Apps by Jafier Andreas</h1>
+</header>
+
+<div class="wrapper">
+  <div class="row-container-top">
+    <div class="container-author" style="display: flex; flex-direction: column; align-items: center;">
+      <h1>Dev</h1>
+      <img src="./assets/authorJafier.jpg" alt="Author Photo" class="circleAvatar">
+      <div class="author-info">
+        <div class="author-info-left">
+          <p><span class="bold">Nama</span></p>
+          <p><span class="bold">Pekerjaan</span></p>
+          <p><span class="bold">Lokasi</span></p>
+          <p><span class="bold">Linktree</span></p>
+        </div>
+        <div class="author-info-right">
+          <p>Jafier Andreas</p>
+          <p>Mahasiswa</p>
+          <p>Indonesia</p>
+          <a href="https://linktr.ee/KaezelStore" target="_blank">Click Here!</a>
+        </div>
+      </div>
+    </div>
+    <div class="container bg-white shadow" id="add-book">
+      <h2 class="container-header text-center">Tambah Buku Baru</h2>
+      <h4 class="container-header text-center">Jumlah buku di rak = <span id="book-count">0</span> buku</h4>
+      <form class="form" action="#" id="form">
+        <div class="form-group form-title">
+          <label for="title">Judul Buku</label>
+          <input type="text" id="title" name="title" required>
+        </div>
+        <div class="form-group form-title">
+          <label for="penulis">Penulis</label>
+          <input type="text" id="penulis" name="penulis" required>
+        </div>
+        <div class="form-group form-title">
+          <label for="year">Tahun</label>
+          <input type="number" id="year" name="year" required>
+        </div>
+        <div class="row-container-input">
+        <div class="kiri">
+          <label for="checkBookIsComplete">Sudah dibaca?</label>
+          <input type="checkbox" id="checkBookIsComplete">
+        </div>
+        <div class="kanan">
+          <input type="submit" value="Tambahkan" name="Submit" class="btn-submit">
+        </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="row-container-bot">
+    <div class="container">
+      <h2 class="container-header">Buku yang belum selesai dibaca</h2>
+      <div class="list-item" id="books">
+      </div>
+    </div>
+  
+    <div class="container">
+      <h2 class="container-header">Buku yang sudah selesai dibaca</h2>
+      <div class="list-item" id="completed-books">
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/script.js" type="text/javascript"></script>
+
+</body>
+</html>
